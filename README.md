@@ -1,84 +1,82 @@
-# Wings of Nwoga Ndu Foundation website
+# Wings of Nwoga Ndu Foundation
 
-The website for Wings of Nwoga Ndu Foundation, Inc., a nonprofit that empowers underserved youth by expanding access to education, health resources, mentorship and opportunity.
+The official website of Wings of Nwoga Ndu Foundation, Inc.
 
-> Giving Every Child the Wings to Dream.
+> **Giving Every Child the Wings to Dream.**
 
-## Status
+Wings of Nwoga Ndu empowers underserved youth by expanding access to education, health resources, mentorship, and opportunities that help them build brighter futures.
 
-Phase 1 is built and in review. It is a preview, not the finished site:
+## About the site
 
-- The contact and interest forms validate input but do not send messages yet.
-- Boxes marked "Draft" show where content from the foundation is still needed.
-- Impact figures stay hidden until there are verified numbers to publish.
-- Online donations are not enabled.
+The site introduces the foundation, explains its four pillars of work (Education, Health, Opportunity and Community), and gives visitors clear ways to volunteer, partner or get in touch.
 
-## Pages
+| Page | Purpose | File |
+|---|---|---|
+| Home | Introduces the foundation and its mission | `public/index.html` |
+| About | The foundation's story, name, mission, vision and values | `public/about.html` |
+| Programs | The four pillars and their areas of focus | `public/programs.html` |
+| Our Impact | How the foundation measures and shares its results | `public/impact.html` |
+| Get Involved | Volunteering, partnerships and ways to support | `public/get-involved.html` |
+| Contact | How to reach the foundation | `public/contact.html` |
+| Scholarships | Information on the upcoming scholarship program | `public/scholarships.html` |
 
-| Page | File |
-|---|---|
-| Home | `public/index.html` |
-| About | `public/about.html` |
-| Programs | `public/programs.html` |
-| Our Impact | `public/impact.html` |
-| Get Involved | `public/get-involved.html` |
-| Contact | `public/contact.html` |
-| Scholarships (future program) | `public/scholarships.html` |
+## Built with
 
-## Project layout
+- Semantic HTML, CSS and vanilla JavaScript, with no frameworks and no build step
+- A responsive layout for desktop, tablet and mobile
+- Accessibility in mind: keyboard navigation, a skip link, labelled form fields, readable contrast, and motion that switches off for visitors who prefer reduced motion
+- [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) and [Montserrat](https://fonts.google.com/specimen/Montserrat) from Google Fonts
+
+## Project structure
 
 ```
-public/            The website. Everything in here gets published.
-  css/styles.css   All styling, including brand colors and animation
-  js/main.js       Mobile menu, form handling, scroll animations
-  images/          Logo files and the browser tab icon
-DESIGN.md          The design brief: content rules, brand, requirements, open questions
-.github/workflows  Publishes public/ to GitHub Pages
+public/              The website; everything here is published
+  css/styles.css     Styles, brand colors and animation
+  js/main.js         Navigation, forms and scroll effects
+  images/            Logo files and site icon
+DESIGN.md            Design brief, brand guidelines and content standards
+.github/workflows/   Deployment to GitHub Pages
 ```
 
-The site is plain HTML, CSS and JavaScript. There is nothing to install and no build step.
+## Running locally
 
-## Preview it on your computer
-
-With Python installed, run this from the project folder:
+No installation is required. From the project folder:
 
 ```
 python -m http.server 8000 --directory public
 ```
 
-Then open http://localhost:8000 in a browser. You can also open `public/index.html` directly.
+Then open http://localhost:8000. Opening `public/index.html` directly in a browser also works.
 
-## Making changes
+## Deployment
 
-- **Text:** edit the page's HTML file.
-- **Colors and fonts:** change the variables at the top of `public/css/styles.css`.
-- **Header and footer:** these are repeated in every page, so a change to one needs to be made in all seven files.
-- **Before publishing anything new**, check it against the content rules in [DESIGN.md](DESIGN.md). In short: no unverified statistics, no program shown as active before it launches, and no photos or stories of children without consent.
+Pushing to `main` publishes the `public/` folder through GitHub Pages, using the workflow in `.github/workflows/pages.yml`.
 
-## Publishing
-
-Every push to `main` publishes the `public/` folder to GitHub Pages at https://danielonyejiekwe.com/wingsofnwogandu.org/. This requires Pages to be enabled in the repository settings, with the source set to GitHub Actions.
-
-The long-term home is wingsofnwogandu.org, hosted on GoDaddy. To deploy there, upload the contents of `public/` to the hosting account's web root.
+For traditional web hosting, upload the contents of `public/` to the host's web root.
 
 ## Brand
 
-| | |
+| Element | Value |
 |---|---|
-| Colors | Forest green `#1D4134`, ivory `#FAF6EC`, burgundy `#6E1F2E`, gold `#BE9A59`, charcoal `#2B2B2B` |
-| Heading font | Cormorant Garamond |
-| Body font | Montserrat |
+| Forest green | `#1D4134` |
+| Ivory | `#FAF6EC` |
+| Burgundy | `#6E1F2E` |
+| Gold | `#BE9A59` |
+| Charcoal | `#2B2B2B` |
+| Heading typeface | Cormorant Garamond |
+| Body typeface | Montserrat |
 
-Full guidelines are in [DESIGN.md](DESIGN.md).
+Colors and typefaces are defined as variables at the top of `public/css/styles.css`. Full brand guidelines are in [DESIGN.md](DESIGN.md).
 
-## Still needed from the foundation
+## Content standards
 
-- Official contact email and the inbox for form submissions
-- Social media links
-- The founder's message and the full origin story
-- Photographs with permission to publish
-- Completed initiatives and any verified impact figures
-- Confirmation of the current tagline (the logo and the brief use different ones)
-- Privacy Policy and Terms of Use
+The foundation holds its website to a few firm rules:
 
-© 2026 Wings of Nwoga Ndu Foundation, Inc.
+- Impact figures are published only when they can be verified and documented.
+- Programs are presented as active only once they have launched.
+- Stories and images of young people are shared only with consent.
+- Partners and sponsors are named only with their permission.
+
+## License
+
+© 2026 Wings of Nwoga Ndu Foundation, Inc. All rights reserved. The foundation's name, logo and brand assets may not be used without permission.
