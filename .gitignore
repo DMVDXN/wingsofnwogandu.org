@@ -1,0 +1,27 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and tool settings
+.vscode/
+.idea/
+.claude/
+*.swp
+
+# Secrets and local configuration
+.env
+.env.*
+
+# Dependencies and build output, if tooling is added later
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Original design sources: keep these locally, publish only the exported files
+public/images/Untitled design.PNG
